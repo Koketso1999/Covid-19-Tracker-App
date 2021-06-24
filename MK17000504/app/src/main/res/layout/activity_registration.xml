@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+    <TextView
+        android:id="@+id/tv_firstname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="FIRSTNAME"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/tv_firstname"
+        android:ems="9" />
+
+    <TextView
+        android:id="@+id/tv_lastname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="LASTNAME"
+        android:layout_below="@id/tv_firstname"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"/>
+
+
+    <EditText
+        android:id="@+id/et_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_firstname"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/tv_lastname"
+        android:ems="9" />
+
+    <TextView
+        android:id="@+id/tv_dateVist"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="DATE"
+        android:layout_below="@id/tv_lastname"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"/>
+
+
+    <EditText
+        android:id="@+id/et_dateVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lastname"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/tv_dateVist"
+        android:ems="9" />
+
+    <TextView
+        android:id="@+id/tv_temparature"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="TEMPERATURE"
+        android:layout_below="@id/tv_dateVist"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"/>
+
+
+    <EditText
+        android:id="@+id/et_temparature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_dateVisit"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="57dp"
+        android:layout_toRightOf="@+id/tv_temparature"
+        android:ems="9" />
+
+    <TextView
+        android:id="@+id/visitor_contact"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="CONTACT"
+        android:layout_below="@id/tv_temparature"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+
+    <EditText
+        android:id="@+id/et_visitor_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lastname"
+        android:layout_marginLeft="-187dp"
+        android:layout_marginTop="51dp"
+        android:layout_toRightOf="@+id/et_temparature"
+        android:ems="9" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_temparature"
+        android:layout_marginTop="70dp"
+        android:text="SAVE DATA"
+        android:layout_marginLeft="100dp"/>
+
+</RelativeLayout>
